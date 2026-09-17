@@ -1,0 +1,13 @@
+{
+  "name": "Anaconda Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.9-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/conda:1": {}
+  },
+  "postCreateCommand": "conda env create -f environment.yml",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
